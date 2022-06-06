@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OTONTÓLOGOS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="contenedor nav">
+                <div class="logo">
+                    <img src="imagen/logo.jpg" alt="">
+                </div>
+                <div class="enlaces-header">
+                    <a href="index.html">INICIO</a>
+                    <a href="odontologos.html">ODONTÓLOGOS</a>
+                    <a href="especialidades.html">ESPECIALIDADES</a>
+                    <a href="iniciosesion.html">INICIAR SESIÓN</a>
+                    
+                </div>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+        <div class="contenedor baner">
+            <img class="baner_imagen" src="imagen/dentistas.jpg">
+            <div class="">
+                <p><a class="baner_letra" id="baner_letra" href="index.html">CLÍNICA DENTAL ODONTOMED</a></p>
+            </div>
+        </div>
+    </header>
+    <section class="about-us">
+        <div class="contenedor1">
+            <h2 class="titulo">ODONTÓLOGOS</h2>
+            <div class="contenedor-articulo">
+                <div class="articulo" data-aos="zoom-in-right">
+                    <div class="odontologos">
+                        <img  class="odontologo_imagen" src="imagen/odontologo1.jpeg">
+                    </div>
+                    
+                    <h3>Javier Falcón Pozo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque iure optio cum in, blanditiis possimus natus, explicabo et quidem ullam aliquam eum, nemo ipsam eligendi maiores voluptatibus repudiandae quos!</p>
+                    
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <div class="odontologos">
+                        <img  class="odontologo_imagen" src="imagen/odontologo2.jpg">
+                    </div>
+                    <h3>Gina Falcón Pozo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <div class="odontologos">
+                        <img  class="odontologo_imagen" src="imagen/odontologo3.jpg">
+                    </div>
+                    <h3>Paola Cueva Caballero</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="reservacion">
+        <p>RESERVE SU CITA</p>
+        <div class="reservacion_cuadro_t">
+            <p>Cuadro de citas</p>
+            <table class="reservacion_cuadro">
+                <thead class="tabla_cabeza_citas">
+                    <tr class="tb_cabeza_celda">
+                        <th>HORAS DISPONIBLES</td>
+                        <th>SELECCIONAR</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tb_cuerpo"></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="formulario_reservacion">
+            <div class="formulario_documento">
+                <label for="form_doc-id" class="form_label">Documento de Identidad</label>
+                <input type="text" name="doc_id" id="form_doc-id" class="form_input"
+                    placeholder="Documento de Identidad">
+                <p class="mensaje_nombre" id="validardocumento">Rellene este campo por favor</p>
+            </div>
+            <div class="formulario_hora">
+                <label for="form_hora" class="form_label">Hora</label>
+                <input type="text" name="form_hora" id="form_hora" class="form_input" placeholder="Hora">
+                <p class="mensaje_nombre" id="validarhora">Rellene este campo por favor</p>
+            </div>
+            <div class="formulario_odontologo">
+                <label for="odontologo" class="form_label">Odonlólogo</label>
+                <select id="odontologo" class="odontologo">
+                    <!--este campo se rellenará con de el dni nombre y especialidad de los odontólogos que halla en la base de datos -->
+                </select>
+                <p class="mensaje_nombre">Rellene este campo por favor</p>
+            </div>
+            <div class="formulario_tipo-reservacion">
+                <label for="tiporeserva" class="form_label">Tipo de Reservación</label>
+                <select id="tiporeserva" class="tipo_reserva">
+                    <option value="seleccione" name="seleccione" id="seleccione">
+                        <-SELECCIONE->
+                    </option>
+                    <option value="consulta" name="consulta" id="consulta">CONSULTA</option>
+                    <option value="tratamiento" name="tratamiento" id="tratamiento">TRATAMIENTO</option>
+                </select>
+                <p class="mensaje_nombre" id="validarespecialidad">Rellene este campo por favor</p>
+            </div>
+            <div class="enviar">
+                <button  class="enviar_boton" type="button" value="">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="partFooter">
+            <img src="imagen/logo.jpg" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Ubicanos en</h4>
+            <p>Jr. 2 de Mayo 1387</p>
+            <h4>CONTACTOS</h4>
+            <p>999999999</p>
+            <p></p>
+        </div>
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+               
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
